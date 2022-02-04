@@ -14,7 +14,7 @@ if __name__ == '__main__':
         if len(listdir(cwd)) > 0:
             for file in listdir(cwd):
                 try:
-                    print(f'{cwd}/{file} has been deleted')
+                    print(f'{cwd}/{file} has been deleted.')
                     remove(f'{cwd}/{file}')                    
                 except PermissionError:
                     pass
