@@ -6,7 +6,7 @@ Example-1:
 ```sh
 PS: cd desktop
 PS: rmv Test.jar
-PS: rmv ,/Bunch_of_useless_shit_folder
+PS: rmv ./Bunch_of_useless_shit_folder
 PS: rmv ./Photos
 ```
 ## Requirements:
