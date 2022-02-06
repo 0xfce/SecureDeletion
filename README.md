@@ -2,6 +2,10 @@
 ## _it automatically set the given file bytes to 0 and delete it, to prevent the file recovery. i guess_
 
 ## Usage
+Example-0:
+```sh
+PS C:/> rmv -p C:/Users/0xfce/desktop/some_random_file.exe 
+```
 Example-1:
 ```sh
 PS C:/> rmv -p g:/bunch_of_useless_shit_folder -s txt "it will delete every .txt file in the target folder"
