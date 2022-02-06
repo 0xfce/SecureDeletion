@@ -4,7 +4,7 @@ from os import path, getcwd, listdir, remove, walk, chdir
 parser = ArgParser()
 
 parser.add_argument('-s', '--specify', help='Deletes only a specific files extension', required=False)
-parser.add_argument('-p', '--path', help='Deletes only a specific file extension', required=True)
+parser.add_argument('-p', '--path', help='Path to the file/directory/folder', required=True)
 
 args = parser.parse_args()
 
@@ -66,3 +66,4 @@ def execute(_path:str):
 
 if __name__ == '__main__':
     execute(getcwd() if args.path == 'this' or args.path == 'here' else args.path)
+
