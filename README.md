@@ -1,5 +1,5 @@
 # Secure Deletion
-## _it automatically set the given file bytes to 0 and delete it, to prevent the file restoration. i guess_
+## _it automatically set the given file bytes to 0 and delete it, to prevent the file recovery. i guess_
 
 ## Usage
 Example-1:
