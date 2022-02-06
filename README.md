@@ -4,10 +4,21 @@
 ## Usage
 Example-1:
 ```sh
-PS: cd desktop
-PS: rmv Test.jar
-PS: rmv ./Bunch_of_useless_shit_folder
-PS: rmv ./Photos
+PS C:/> rmv -p g:/bunch_of_useless_shit_folder -s txt "it will delete every .txt file in the target folder"
+```
+Example-2:
+```sh
+PS C:/Users/0xfce> cd desktop/bunch_of_useless_shit_folder/
+PS C:/Users/0xfce/bunch_of_useless_shit_folder> rmv -p here -s pdf "it will delete every pdf file in the current working directory/folder"
+```
+Example-3:
+```sh
+PS C:/Users/0xfce> cd desktop/bunch_of_useless_shit_folder/
+PS C:/Users/0xfce/bunch_of_useless_shit_folder> rmv -p here "it will delete everything in the current working directory/folder"
+```
+Example-4:
+```sh
+PS C:/> rmv -p g:/bunch_of_useless_shit_folder  "it will delete everything in the target directory/folder"
 ```
 ## Requirements:
 - Python 3
