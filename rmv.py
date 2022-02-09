@@ -34,10 +34,17 @@ def rmv(dir: str):
                 chdir(args.path)
         else:
             with open(dir, mode='wb') as f:
-                f.write(bytes(0x0))
-                f.close()
-                print(f'{f.name} has been deleted.')
-                remove(f.name)            
+                if args.specify:
+                    if f.name.endswith(f'.{args.specify}'):
+                        f.write(bytes(0x0))
+                        f.close()
+                        print(f'{f.name} has been deleted.')
+                        remove(f.name) 
+                else:
+                    f.write(bytes(0x0))
+                    f.close()
+                    print(f'{f.name} has been deleted.')
+                    remove(f.name)           
     except NotADirectoryError:
         print('directory not found.')
     except FileNotFoundError:
